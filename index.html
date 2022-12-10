@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한류의 중심, 한국영화</title>
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <script>
+        function init(){
+            let headimg = document.querySelector("#headimg");
+            headimg.onclick = moveBackToHome;
+            let rotateSpan = document.getElementById("rotatespan");
+            let timer = setInterval(function(){
+                let spanString = rotateSpan.innerHTML;
+                rotateSpan.style.color ="darkslategrey";
+                let first = spanString.substr(0, 1);
+                let rest = spanString.substr(1, spanString.length - 1);
+                spanString = rest + first;//문자열 concat
+                rotateSpan.innerHTML = spanString;
+            }, 1000);
+        }
+        function moveBackToHome(){
+            window.location.href = "index.html";
+            //window.location.replace("index.html");
+        }
+    </script>
+</head>
+<body onload="init()">
+    <header>
+        <img id="headimg" src="mainImages/hufslogo.gif" title="홈페이지로고" width="200" height="40">
+        <h2 class="titlepose">[한국영화, 한류의 중심에 서다]</h2>
+        <h4 class="titlepose"><span id="rotatespan">세계로 뻗어나가는 한국영화-</span></h4>
+        <!-- -Korean movies become a phenomenon- -->
+        <hr id ="titlehr">
+    </header>
+    <nav id="navibar">
+        <ul>
+            <li><a href="movietable.html">Awarded movies</a></li>
+            <li><a href="movietable.html">Awarded TVseries</a></li>
+            <li><a href="statistics.html">통계 자료</a></li><!--각종 통계자료. 넷플릭스-->
+            <li><a href="history.html">영상한류 사실</a></li>
+        </ul>
+    </nav><br><br>
+    <section>
+        <article><!--메인베너-->
+            <div class="outer">
+                <!-- <div class="banner1">
+                    <img class="bannerimg" src="mainImages/bong.png" title="봉준호 수상" width="800" height="350">
+                </div> -->
+                <div id="animation-div"></div>
+            </div>
+            <hr id="sectionhr">
+        </article>
+        <article>
+            <!--그냥 표로 만드는게 나을듯. ul로 이미지 마커 하니까 해상도가 떨어짐-->
+            <br>
+            <table>
+                <thead>
+                    <tr><th colspan="2">전세계 비평가들이 극찬한 한국영화!</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><img src="mainImages/tropy_black.png" width="25" height="25"></td>
+                        <td><b>기생충</b> - 아카데미 작품상, 칸 황금종려상 외 다수 수상!</td>
+                    </tr>
+                    <tr><td><img src="mainImages/tropy_black.png" width="25" height="25"></td>
+                        <td><b>헤어질 결심</b> - 칸 영화제 황금종려상 외 다수 수상!</td>
+                    </tr>
+                    <tr><td><img src="mainImages/tropy_black.png" width="25" height="25"></td>
+                        <td><b>오징어 게임</b> - 에미상 6개 부문 석권!</td>
+                    </tr>
+                    <tr><td><img src="mainImages/tropy_black.png" width="25" height="25"></td>
+                        <td><b>미나리</b> - 아카데미 여우조연상 수상!</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </article>    
+    </section>
+    <footer id="footer">
+        <p>
+            Copyright 2022 &copy;Hankuk university of foreign studies<br><br>
+            Published by Ty Kim
+        </p>
+    </footer>
+</body>
+</html>

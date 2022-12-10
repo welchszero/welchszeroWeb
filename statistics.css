@@ -1,0 +1,59 @@
+#titlehr {
+    height : 2px;
+    border : solid grey;
+    background-color : grey;
+    /*border-radius : 12px;*/
+}
+
+#sortingButton {
+    margin-left : 50px;
+    margin-top : 10px;
+    margin-bottom : 20px;
+    color : white;
+    border : 3px solid lightsteelblue;
+    border-radius : 5px;
+    cursor : pointer;
+    background-color : darkslategrey;
+}
+body section {
+    background-color : aliceblue;
+    border : 3px solid darkslategray;
+    border-radius : 20px;
+
+}
+canvas {
+    display : block;/*block 태그로 바꾸고 margin을 auto로 주면 중앙정렬 가능*/
+    margin : auto;
+}
+.subtitle {
+    text-align : center;
+}
+.titlerow{
+    background-color:darkslategrey;
+    color : aliceblue;
+    border-radius : 12px;
+    padding-left : 15px;
+}
+#chartmiddlehr {
+    width : 80%;
+}
+section > article span#movingtitle {
+    color : lightsteelblue;
+
+}
+article img#netflixImg {
+    display : block;
+    margin :auto;
+    margin-bottom : 50px;
+    border-radius : 12px;
+}
+#footer { 
+    background-color : antiquewhite;
+    clear : both;
+    width : 100%;
+    bottom : 10px;
+}
+#footer p {
+    font-family : "Times New Roman", Helvetica, Sans-Serif;
+    text-align : center;
+}

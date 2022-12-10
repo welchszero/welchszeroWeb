@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>영화제 수상 영화</title>
+    <link href="statistics.css" type="text/css" rel="stylesheet">
+    <script>
+        function init(){
+            let headimg = document.getElementById("headimg");
+            headimg.onclick=moveBackToHome;
+
+        }
+        function moveBackToHome(){
+            window.location.href = "index.html";
+        }
+    </script>
+</head>
+<body onload="init()">
+    <header>
+        <img id="headimg" src="mainImages/hufslogo.gif" title="홈페이지로고" width="200" height="40">
+        <h3>통계로 보는 영화 한류[Statistics]</h3>
+        <hr id="titlehr">
+        <br>        
+    </header>
+    <section>
+        <article>
+            <div id="chartgroup">
+                <h4 class="subtitle">&lt;8500명 외국인 대상 한국영화 인기 설문조사 [출처: statista.com]&gt;</h4>
+                <canvas id="piechart">
+                </canvas>
+                <hr id="chartmiddlehr">
+                <canvas id="status"></canvas>
+            </div>
+        </article>
+        <article>
+            <h4 class="subtitle">&lt;세계 1위 OTT 넷플릭스를 평정한 한국 시리즈물 [출처:flixpatrol.com]&gt;<br>
+                <span id="movingtitle">오징어게임 넷플릭스 전기간, 전언어, 전장르 압도적 1위 - </span>
+            </h4>
+            <p><img id="netflixImg" src="statisticsImage/netflixOverall.png" width="600" height="500" alt="넷플릭스 통계"></p>
+        </article>
+        <!--Korean movie wave history 연혁-->
+    </section>
+    <footer id="footer">
+        <p>
+            Copyright 2022 &copy;Hankuk university of foreign studies<br><br>
+            Published by Ty Kim
+        </p>
+    </footer>
+    <script src="statistics.js"></script>
+</body>
+</html>

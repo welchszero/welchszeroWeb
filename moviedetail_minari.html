@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>미나리 상세정보</title>
+    <link href="moviedetail.css" type="text/css" rel="stylesheet">
+    <script>
+        function init(){
+            let headimg = document.getElementById("headimg");
+            headimg.onclick=moveBackToHome;
+
+        }
+        function moveBackToHome(){
+            window.location.href = "index.html";
+        }
+    </script>
+</head>
+<body onload="init()">
+    <header>
+        <img id="headimg" src="mainImages/hufslogo.gif" title="홈페이지로고" width="200" height="40">
+        <h3>미나리(Minari) 상세정보</h3>
+        <hr id="titlehr">
+        <br>        
+    </header>
+    <section>
+        <figure>
+            <h4>Minari - Official Trailer</h4>
+            <br><br>
+            <video id="trailer" src="moviedetails/Minari_trailer.mp4">
+            </video>
+            <hr id="titlehr">
+            <br>
+        </figure>
+        <article>
+            <details>
+                <summary><b>제작진(Crew)</b></summary>
+                <p>
+                    <hr>
+                    <strong>감독(Director):</strong> 정이삭(Jung Issac)<br>
+                    <strong>제작(Producers):</strong> 데드 가드너(Dede Gardner), 제레미 클레이너(Jeremy Kleiner)<br>
+                    <strong>촬영(Photography):</strong> 라클란 밀른(Lachlan Milne)<br>
+                    <strong>미술(Production Design):</strong> 이용옥(Lee Yong-ok)<br>
+                    <strong>특수효과(Special Effects):</strong> 케니 빈클리(Kenny Binkley), 조슈아 밀러(Joshua miller)<br>
+                    <strong>음악(Music):</strong> 제이슨 버틀러(Jason Butler)
+                </p>
+            </details>
+            <details>
+                <summary><b>주요 출연진(Main Cast)</b></summary>
+                <p>
+                    <hr>
+                    <strong>제이콥 역:</strong> 스티븐 연(Steven Yeon)<br>
+                    <strong>모니카 역:</strong> 한예리(Yeri Han)<br>
+                    <strong>순자 역:</strong> 윤여정(Yoon Yeo-jeong)<br>
+                    <strong>데이빗 역:</strong> 앨런 킴(Alan Kim)<br>
+                    <strong>앤 역:</strong> 노엘 조(Noel Cho)<br>
+                    <strong>폴 역:</strong> 윌 패튼(Will Patton)<br>
+                    <strong>빌리 역:</strong> 스콧 헤이즈(Scott Haze)
+                </p>
+            </details>
+            <details>
+                <summary><b>주요사이트 평점(Ratings)</b></summary>
+                <p>
+                    <hr>
+                    <strong>Rotten Tomatoes: </strong>98%<br>
+                    <strong>IMDB: </strong>7.7 out of 10<br>
+                    <strong>Metacritic: </strong>8.2 out of 10<br>
+                    <strong>Watchapedia: </strong>3.8 out of 5.0<br>
+                    <strong>Naver Movie: </strong>8.39 out of 10
+                </p>
+            </details>
+        </article>
+    </section>
+    <footer id="footer">
+        <p>
+            Copyright 2022 &copy;Hankuk university of foreign studies<br><br>
+            Published by Ty Kim
+        </p>
+    </footer>
+    <script src="moviedetail.js"></script>
+</body>
+</html>

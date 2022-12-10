@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>영화 상세정보</title>
+    <link href="moviedetail.css" type="text/css" rel="stylesheet">
+    <script>
+        function init(){
+            let headimg = document.getElementById("headimg");
+            headimg.onclick=moveBackToHome;
+
+        }
+        function moveBackToHome(){
+            window.location.href = "index.html";
+        }
+    </script>
+</head>
+<body onload="init()">
+    <header>
+        <img id="headimg" src="mainImages/hufslogo.gif" title="홈페이지로고" width="200" height="40">
+        <h3>헤어질 결심(Decision to leave) 상세정보</h3>
+        <hr id="titlehr">
+        <br>        
+    </header>
+    <section>
+        <figure>
+            <h4>Decision to leave - Official Trailer</h4>
+            <br><br>
+            <video id="trailer" src="moviedetails/Leave_trailer.mp4">
+            </video>
+            <hr id="titlehr">
+            <br>
+        </figure>
+        <article>
+            <details>
+                <summary><b>제작진(Crew)</b></summary>
+                <p>
+                    <hr>
+                    <strong>감독(Director):</strong> 박찬욱(Park Chan-wook)<br>
+                    <strong>제작(Producers):</strong> 이미경(Lee Mi-gyeong), 강호성(Kang Ho-seong)<br>
+                    <strong>촬영(Photography):</strong> 김지용(Kim Ji-yong)<br>
+                    <strong>미술(Production Design):</strong> 이은진(Lee en-jin)<br>
+                    <strong>특수효과(Special Effects):</strong> 이전형(Lee Jeon-Hyung), 박소연(Park So-yeon)<br>
+                    <strong>음악(Music):</strong> 정군(Jung Goon), 김석원(Kim Seok-won)
+                </p>
+            </details>
+            <details>
+                <summary><b>주요 출연진(Main Cast)</b></summary>
+                <p>
+                    <hr>
+                    <strong>해준 역:</strong> 박해일(Park Hae-il)<br>
+                    <strong>서래 역:</strong> 탕웨이(Tang Wei)<br>
+                    <strong>정안 역:</strong> 이정현(Lee Jeong-Hyun)<br>
+                    <strong>임호신 역:</strong> 박용우(Park Yong-woo)<br>
+                    <strong>수완 역:</strong> 고경표(Goh Gyeong-pyo)<br>
+                    <strong>연수 역:</strong> 김신영(Kim Shin-yeong)<br>
+                    <strong>월요일 할머니 역:</strong> 정명숙(Jeong Myung-sook)
+                </p>
+            </details>
+            <details>
+                <summary><b>주요사이트 평점(Ratings)</b></summary>
+                <p>
+                    <hr>
+                    <strong>Rotten Tomatoes: </strong>94%<br>
+                    <strong>IMDB: </strong>7.3 out of 10<br>
+                    <strong>Metacritic: </strong>8.0 out of 10<br>
+                    <strong>Watchapedia: </strong>4.2 out of 5.0<br>
+                    <strong>Naver Movies: </strong>8.96 out of 10
+                </p>
+            </details>
+        </article>
+    </section>
+    <footer id="footer">
+        <p>
+            Copyright 2022 &copy;Hankuk university of foreign studies<br><br>
+            Published by Ty Kim
+        </p>
+    </footer>
+    <script src="moviedetail.js"></script>
+</body>
+</html>

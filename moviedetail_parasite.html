@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>기생충 상세정보</title>
+    <link href="moviedetail.css" type="text/css" rel="stylesheet">
+    <script>
+        function init(){
+            let headimg = document.getElementById("headimg");
+            headimg.onclick=moveBackToHome;
+
+        }
+        function moveBackToHome(){
+            window.location.href = "index.html";
+        }
+    </script>
+</head>
+<body onload="init()">
+    <header>
+        <img id="headimg" src="mainImages/hufslogo.gif" title="홈페이지로고" width="200" height="40">
+        <h3>기생충(Parasite) 상세정보</h3>
+        <hr id="titlehr">
+        <br>        
+    </header>
+    <section>
+        <figure>
+            <h4>Parasite - Official Trailer</h4>
+            <br><br>
+            <video id="trailer" src="moviedetails/Parasite_trailer.mp4">
+            </video>
+            <hr id="titlehr">
+            <br>
+        </figure>
+        <article>
+            <details>
+                <summary><b>제작진(Crew)</b></summary>
+                <p>
+                    <hr>
+                    <strong>감독(Director):</strong> 봉준호(Bong Joon-ho)<br>
+                    <strong>제작(Producers):</strong> 곽신애(Gwak Shin-ae), 이미경(Lee Mi-gyeong)<br>
+                    <strong>촬영(Photography):</strong> 홍경표(Hong Gyung-pyo)<br>
+                    <strong>미술(Production Design):</strong> 이하준(Lee Ha-jun)<br>
+                    <strong>특수효과(Special Effects):</strong> 홍정호(Hong Jeong-ho), 정도안(Cheong Do-an)<br>
+                    <strong>음악(Music):</strong> 정재일(Jung jae-il)
+                </p>
+            </details>
+            <details>
+                <summary><b>주요 출연진(Main Cast)</b></summary>
+                <p>
+                    <hr>
+                    <strong>기택 역:</strong> 송강호(Song Gang-ho)<br>
+                    <strong>동익 역:</strong> 이선균(Lee Seon-Gyun)<br>
+                    <strong>연교 역:</strong> 조여정(Cho Yeo-jeong)<br>
+                    <strong>기우 역:</strong> 최우식(Choi Woo-sik)<br>
+                    <strong>기정 역:</strong> 박소담(Park So-dam)<br>
+                    <strong>문광 역:</strong> 이정은(Lee Jung-en)<br>
+                    <strong>충숙 역:</strong> 장혜진(Jang Hyae-jin)
+                </p>
+            </details>
+            <details>
+                <summary><b>주요사이트 평점(Ratings)</b></summary>
+                <p>
+                    <hr>
+                    <strong>Rotten Tomatoes: </strong>99%<br>
+                    <strong>IMDB: </strong>8.6 out of 10<br>
+                    <strong>Metacritic: </strong>8.9 out of 10<br>
+                    <strong>Watchapedia: </strong>4.3 out of 5.0<br>
+                    <strong>Naver Movie: </strong>9.07 out of 10
+                </p>
+            </details>
+        </article>
+    </section>
+    <footer id="footer">
+        <p>
+            Copyright 2022 &copy;Hankuk university of foreign studies<br><br>
+            Published by Ty Kim
+        </p>
+    </footer>
+    <script src="moviedetail.js"></script>
+</body>
+</html>

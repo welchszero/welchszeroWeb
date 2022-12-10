@@ -1,0 +1,59 @@
+#titlehr {
+    height : 2px;
+    border : solid grey;
+    background-color : grey;
+}
+#sortingButton {
+    margin-left : 50px;
+    margin-top : 10px;
+    margin-bottom : 20px;
+    color : white;
+    border : 3px solid lightsteelblue;
+    border-radius : 5px;
+    cursor : pointer;
+    background-color : darkslategrey;
+}
+section {
+    background-color : aliceblue;
+    border : 3px solid darkslategray;
+    border-radius : 20px;
+}
+table {
+    margin : auto;
+    margin-bottom : 30px;
+}
+.moviePoster {
+    border-radius : 12px;
+    margin-right : 15px;
+
+}
+.titlerow{
+    background-color:darkslategrey;
+    color : aliceblue;
+    border-radius : 12px;
+    padding-left : 15px;
+}
+#movieTrailer a{
+    text-decoration : none;
+    padding-left : 20px;
+    padding-right : 20px;
+    text-align : right;
+    font-size : 15px;
+    color : black;
+    background-color : lightsteelblue;
+    border-radius : 12px;
+}
+#movieTrailer a:hover{
+    color : antiquewhite;
+}
+
+#footer { 
+    background-color : antiquewhite;
+    clear : both;
+    width : 100%;
+    bottom : 10px;
+}
+#footer p {
+    font-family : "Times New Roman", Helvetica, Sans-Serif;
+    text-align : center;
+}

@@ -1,0 +1,70 @@
+#titlehr {
+    height : 2px;
+    border : solid grey;
+    background-color : grey;
+    /*border-radius : 12px;*/
+}
+section {
+    background-color : aliceblue;
+    border : 3px solid darkslategray;
+    border-radius : 20px;
+    padding-top : 10px;
+}
+section > article > h4{
+    display : inline;
+    margin-left : 10px;
+    /* padding-left : 20px;
+    padding-right : 20px;
+    padding-top : 5px;
+    padding-bottom : 5px; shorthand property top right bottom left*/
+    padding : 5px 20px 5px 20px;
+    background-color : darkslategray;
+    border-radius : 12px;
+    color : aliceblue;
+}
+#source {
+    padding : 10px 10px 0px 10px;
+    margin : 10px 10px 10px 10px;
+    font-weight : bold;
+}
+button{
+    display : block;
+    margin-top : 10px;
+    margin-bottom : 20px;
+    color : white;
+    border : 3px solid lightsteelblue;
+    border-radius : 5px;
+    cursor : pointer;
+    background-color : darkslategrey;
+}
+article > ul {
+    background : linear-gradient(lightsteelblue, aliceblue);
+    border-radius : 12px;
+    padding-top : 20px;
+    margin-left : 10px;
+    margin-right : 10px;
+    margin-top : 30px;
+    list-style-image : url("mainImages/tropy_black_resized2.png");
+    list-style-position : inside;
+
+}
+article > ul > li{
+    margin: 0px 0px 15px 0px;
+    padding : 5px 20px 10px 10px;
+    font-size : 1.2em;
+    font-weight : normal;
+    font-style : oblique;
+}
+article > ul > li > span {
+    font-weight : bold;
+}
+#footer { 
+    background-color : antiquewhite;
+    clear : both;
+    width : 100%;
+    bottom : 10px;
+}
+#footer p {
+    font-family : "Times New Roman", Helvetica, Sans-Serif;
+    text-align : center;
+}

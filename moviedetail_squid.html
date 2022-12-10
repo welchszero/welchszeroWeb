@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>오징어게임 상세정보</title>
+    <link href="moviedetail.css" type="text/css" rel="stylesheet">
+    <script>
+        function init(){
+            let headimg = document.getElementById("headimg");
+            headimg.onclick=moveBackToHome;
+
+        }
+        function moveBackToHome(){
+            window.location.href = "index.html";
+        }
+    </script>
+</head>
+<body onload="init()">
+    <header>
+        <img id="headimg" src="mainImages/hufslogo.gif" title="홈페이지로고" width="200" height="40">
+        <h3>오징어 게임(Squid game) 상세정보</h3>
+        <hr id="titlehr">
+        <br>        
+    </header>
+    <section>
+        <figure>
+            <h4>Squid Game - Official Trailer</h4>
+            <br><br>
+            <video id="trailer" src="moviedetails/Squidgame_trailer.mp4">
+            </video>
+            <hr id="titlehr">
+            <br>
+        </figure>
+
+        <article>
+            <details>
+                <summary><b>제작진(Crew)</b></summary>
+                <p>
+                    <hr>
+                    <strong>감독(Director):</strong> 황동혁(Hwang Dong-hyuk)<br>
+                    <strong>제작(Producers):</strong> 김지연(Kim Ji-yeon), 황동혁(Hwang Dong-hyuk)<br>
+                    <strong>촬영(Photography):</strong> 이형덕(Lee Hyung-deok)<br>
+                    <strong>미술(Production Design):</strong> 채경선(Chae Gyung-sun)<br>
+                    <strong>특수효과(Special Effects):</strong> 박경구(Park Gyung-gu), 김창석(Kim Chang-seok)<br>
+                    <strong>음악(Music):</strong> 정재일(Jung jae-il)
+                </p>
+            </details>
+            <details>
+                <summary><b>주요 출연진(Main Cast)</b></summary>
+                <p>
+                    <hr>
+                    <strong>성기훈 역:</strong> 이정재(Lee Jung-jae)<br>
+                    <strong>조상우 역:</strong> 박해수(Park Hae-Soo)<br>
+                    <strong>오일남 역:</strong> 오영수(Oh Yeong-su)<br>
+                    <strong>황준호 역:</strong> 위하준(Wi Ha-joon)<br>
+                    <strong>송새벽 역:</strong> 정호연(Jung Ho-yeon)<br>
+                    <strong>장덕수 역:</strong> 허성태(Heo Sung-tae)<br>
+                    <strong>한미녀 역:</strong> 김주령(Kim Joo-ryeong)
+                </p>
+            </details>
+            <details>
+                <summary><b>주요사이트 평점(Ratings)</b></summary>
+                <p>
+                    <hr>
+                    <strong>Rotten Tomatoes: </strong>95%<br>
+                    <strong>IMDB: </strong>8 out of 10<br>
+                    <strong>Metacritic: </strong>7.2 out of 10<br>
+                    <strong>Watchapedia: </strong>3.2 out of 5.0
+                </p>
+            </details>
+        </article>
+    </section>
+    <footer id="footer">
+        <p>
+            Copyright 2022 &copy;Hankuk university of foreign studies<br><br>
+            Published by Ty Kim
+        </p>
+    </footer>
+    <script src="moviedetail.js"></script>
+</body>
+</html>
